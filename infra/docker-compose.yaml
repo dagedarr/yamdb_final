@@ -8,7 +8,8 @@ services:
     env_file:
       - ./.env
   web:
-    build: ../api_yamdb/
+    # Использую последнюю версию образа с моего DH
+    image: natolin/yamdb_final_web:latest
     restart: always
     volumes:
       - static_value:/app/static/
