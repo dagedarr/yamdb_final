@@ -44,4 +44,5 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
+            file: api_yamdb/Dockerfile
             tags: natolin/yamdb_final_web:latest
