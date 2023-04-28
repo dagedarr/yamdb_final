@@ -4,7 +4,6 @@ from datetime import datetime
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
-
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
 
@@ -124,3 +123,4 @@ class TitleSerializer(serializers.ModelSerializer):
         rating = obj.reviews.aggregate(Avg('score'))['score__avg']
         if rating:
             return round(rating)
+        return None
