@@ -1,2 +1,2 @@
 # yamdb_final
-FIXME
+https://github.com/dagedarr/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
