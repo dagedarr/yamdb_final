@@ -8,7 +8,6 @@ services:
     env_file:
       - ./.env
   web:
-    # Использую последнюю версию образа с моего DH
     image: natolin/yamdb_final_web:latest
     restart: always
     volumes:
