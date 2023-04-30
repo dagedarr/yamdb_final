@@ -1,7 +1,6 @@
 # yamdb_final
 ![example workflow](https://github.com/dagedarr/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-
 # Примеры запросов:
 http://51.250.0.37/api/v1/
 http://51.250.0.37/admin/
