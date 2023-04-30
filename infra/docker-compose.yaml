@@ -9,6 +9,7 @@ services:
       - ./.env
   web:
     image: natolin/yamdb_final_web:latest
+    if: github.ref == 'refs/heads/master'
     restart: always
     volumes:
       - static_value:/app/static/
